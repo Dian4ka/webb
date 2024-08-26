@@ -1,0 +1,12 @@
+var newString = "привіт світ";
+var newNumber = 654;
+var newBoolean = false;
+var newAny = "будь-який тип";
+console.log("String:", newString);
+console.log("Number:", newNumber);
+console.log("Boolean:", newBoolean);
+console.log("Any:", newAny);
+var stringArray = ["WEB", "Angular", "Vue", "JSON"];
+var numberArray = [34, 42, 73, 84, 95];
+console.log("String Array:", stringArray);
+console.log("Number Array:", numberArray);
