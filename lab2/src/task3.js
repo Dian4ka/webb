@@ -27,7 +27,7 @@ var Car = /** @class */ (function () {
 var Nissan = /** @class */ (function (_super) {
     __extends(Nissan, _super);
     function Nissan(model, year, color) {
-        var _this = _super.call(this, "Toyota", model, year) || this;
+        var _this = _super.call(this, "Nissan", model, year) || this;
         _this.color = color;
         return _this;
     }
@@ -42,7 +42,7 @@ var Nissan = /** @class */ (function (_super) {
 var Tesla = /** @class */ (function (_super) {
     __extends(Tesla, _super);
     function Tesla(model, year, engineType) {
-        var _this = _super.call(this, "BMW", model, year) || this;
+        var _this = _super.call(this, "Tesla", model, year) || this;
         _this.engineType = engineType;
         return _this;
     }
