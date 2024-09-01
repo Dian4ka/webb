@@ -20,7 +20,7 @@ class Nissan extends Car {
   private color: string;
 
   constructor(model: string, year: number, color: string) {
-    super("Toyota", model, year);
+    super("Nissan", model, year);
     this.color = color;
   }
 
@@ -36,7 +36,7 @@ class Tesla extends Car {
   private engineType: string;
 
   constructor(model: string, year: number, engineType: string) {
-    super("BMW", model, year);
+    super("Tesla", model, year);
     this.engineType = engineType;
   }
 
