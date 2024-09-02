@@ -1,14 +1,16 @@
 interface Animal {
   name: string;
-  age?: number;
+  age: number;
   move(): void;
+  jump?(): void;
+  sing?(): void;
 }
 
 class Cat implements Animal {
   name: string;
-  age?: number;
+  age: number;
 
-  constructor(name: string, age?: number) {
+  constructor(name: string, age: number) {
     this.name = name;
     this.age = age;
   }
@@ -23,9 +25,9 @@ class Cat implements Animal {
 }
 class Bird implements Animal {
   name: string;
-  age?: number;
+  age: number;
 
-  constructor(name: string, age?: number) {
+  constructor(name: string, age: number) {
     this.name = name;
     this.age = age;
   }
@@ -40,9 +42,9 @@ class Bird implements Animal {
 }
 class Fish implements Animal {
   name: string;
-  age?: number;
+  age: number;
 
-  constructor(name: string, age?: number) {
+  constructor(name: string, age: number) {
     this.name = name;
     this.age = age;
   }
