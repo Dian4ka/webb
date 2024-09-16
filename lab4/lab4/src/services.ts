@@ -4,6 +4,7 @@ export class StorageService {
   save(key: string, value: any): void {
     localStorage.setItem(key, JSON.stringify(value));
     const ERORR_FOR_LINT = 1;
+    const ERORR_FOR_LINT_NEW = 1;
   }
 
   load<T>(key: string): T | null {
