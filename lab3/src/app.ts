@@ -266,7 +266,6 @@ class LibraryApp {
         )
         .join("");
 
-      // додаємо обробник події для кожної кнопки
       document.querySelectorAll(".borrow-btn").forEach((btn) => {
         btn.addEventListener("click", (event) =>
           this.onBorrowButtonClick(event)
@@ -286,7 +285,6 @@ class LibraryApp {
           : "Enter user ID to borrow the book:"
       );
 
-      // Видаляємо попередній обробник події
       const modalConfirm = document.getElementById("modalConfirm");
       modalConfirm?.removeEventListener("click", this.handleConfirm as any);
       modalConfirm?.addEventListener("click", () => this.handleConfirm(book));
@@ -322,12 +320,10 @@ class LibraryApp {
     }
   }
 
-  // Відображаємо помилку для поля
   private showFieldError(fieldId: string, message: string) {
     const field = document.getElementById(fieldId) as HTMLInputElement;
     field.classList.add("is-invalid");
 
-    // Перевіряємо чи вже є помилка для цього поля
     let errorElement = field.parentElement?.querySelector(
       ".invalid-feedback"
     ) as HTMLElement;
@@ -351,6 +347,5 @@ class LibraryApp {
   }
 }
 
-// Ініціалізуєм наш додаток
 const app = new LibraryApp();
 app.init();

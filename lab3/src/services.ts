@@ -1,4 +1,3 @@
-// Класс для роботи з localStorage
 export class StorageService {
   save(key: string, value: any): void {
     localStorage.setItem(key, JSON.stringify(value));

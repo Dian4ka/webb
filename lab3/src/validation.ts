@@ -1,4 +1,3 @@
-// Класс для валідації імейлу та року
 export class Validation {
   static isValidYear(year: string): boolean {
     const yearPattern = /^\d{4}$/;
