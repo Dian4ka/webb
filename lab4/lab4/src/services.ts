@@ -3,6 +3,7 @@ export class StorageService {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   save(key: string, value: any): void {
     localStorage.setItem(key, JSON.stringify(value));
+    const ERORR_FOR_LINT = 1;
   }
 
   load<T>(key: string): T | null {
